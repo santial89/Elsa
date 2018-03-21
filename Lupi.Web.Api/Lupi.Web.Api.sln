@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lupi.Data.Entities", "Lupi.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lupi.Data.DataAccess", "Lupi.Data.DataAccess\Lupi.Data.DataAccess.csproj", "{56FEB04B-0ACC-4E9E-87D7-A4FB2AF76F01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lupi.UnitTest", "Lupi.UnitTest\Lupi.UnitTest.csproj", "{D6BF7331-2650-4848-B0B7-AB3C19FAEEC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{56FEB04B-0ACC-4E9E-87D7-A4FB2AF76F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56FEB04B-0ACC-4E9E-87D7-A4FB2AF76F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56FEB04B-0ACC-4E9E-87D7-A4FB2AF76F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6BF7331-2650-4848-B0B7-AB3C19FAEEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6BF7331-2650-4848-B0B7-AB3C19FAEEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6BF7331-2650-4848-B0B7-AB3C19FAEEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6BF7331-2650-4848-B0B7-AB3C19FAEEC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
