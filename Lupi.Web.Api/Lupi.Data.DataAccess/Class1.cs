@@ -9,4 +9,6 @@ namespace Lupi.Data.DataAccess
     public class Class1
     {
     }
+
+
 }
