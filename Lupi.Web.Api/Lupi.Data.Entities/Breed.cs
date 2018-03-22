@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace Lupi.UnitTest
 {
-    internal class Breed
+    public class Breed
     {
-        private List<string> hairColor;
-        private string hairType;
-        private Guid id;
-        private string name;
+        public List<string> hairColor { get; set; }
+        public string hairType { get; set; }
+        public Guid id { get; set; }
+        public string name { get; set; }
 
         public Breed(Guid id, string name, string hairType, List<string> hairColor)
         {

@@ -18,6 +18,8 @@ namespace Lupi.UnitTest
             hairColor.Add("White");
 
             Breed breed = new Breed(id,name,hairType,hairColor);
+
+            Assert.AreEqual(breed.id,id);
         }
     }
 }
