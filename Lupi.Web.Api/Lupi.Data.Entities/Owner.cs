@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lupi.Data.Entities
 {
-    public class Class1
+    public class Owner
     {
+        public Guid Id { get; set; }
+        public String Name { get; set; }
+        public String Mail { get; set; }
+        public String Password { get; set; }
+        public DateTime BirthDate { get; set; }
+
     }
 }

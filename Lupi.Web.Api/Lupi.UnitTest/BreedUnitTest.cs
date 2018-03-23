@@ -26,9 +26,9 @@ namespace Lupi.UnitTest
         public void UpdateBreed()
         {
             var breed = CreateABreed();
-            var breedOld = breed;
+            var breedOldName = breed.name;
             breed.name = "Ovejero";
-            Assert.AreNotEqual(breedOld.name,breed.name);
+            Assert.AreNotEqual(breedOldName,breed.name);
         }
 
 

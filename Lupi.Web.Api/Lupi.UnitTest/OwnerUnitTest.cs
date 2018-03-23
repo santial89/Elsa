@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Lupi.Data.Entities;
 
 namespace Lupi.UnitTest
 {
@@ -10,7 +11,14 @@ namespace Lupi.UnitTest
         public void CreateOwner()
         {
             Owner owner = new Owner();
+            var id = Guid.NewGuid();
+            owner.Id = id;
+            owner.Name = "Juan";
+            owner.Mail = "juan@mail.com";
+            owner.Password = "pfffff";
+            owner.BirthDate = DateTime.Now;
 
+            Assert.AreEqual(owner.Id,id);
 
 
         }

@@ -5,7 +5,6 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using Lupi.Data.Entities;
-using Lupi.UnitTest;
 
 namespace Lupi.Web.Api.Controllers
 {
