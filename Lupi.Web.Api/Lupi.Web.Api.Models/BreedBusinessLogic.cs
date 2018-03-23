@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lupi.Web.Api.Models
+namespace Lupi.BusinessLogic
 {
-    public class Class1
+    public class BreedBusinessLogic
     {
+
+
     }
 }
