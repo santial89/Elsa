@@ -4,11 +4,15 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Lupi.UnitTest
 {
     [TestClass]
-    public class UnitTest2
+    public class OwnerUnitTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CreateOwner()
         {
+            Owner owner = new Owner();
+
+
+
         }
     }
 }

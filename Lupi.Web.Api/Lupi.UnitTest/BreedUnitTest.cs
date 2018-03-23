@@ -21,5 +21,28 @@ namespace Lupi.UnitTest
 
             Assert.AreEqual(breed.id,id);
         }
+
+        [TestMethod]
+        public void UpdateBreed()
+        {
+            var breed = CreateABreed();
+            var breedOld = breed;
+            breed.name = "Ovejero";
+            Assert.AreNotEqual(breedOld.name,breed.name);
+        }
+
+
+        private Breed CreateABreed()
+        {
+            Guid id = System.Guid.NewGuid();
+            String name = "Bulldog";
+            String hairType = "";
+            List<String> hairColor = new List<String>();
+            hairColor.Add("White");
+
+            Breed breed = new Breed(id, name, hairType, hairColor);
+            return breed;
+        }
+
     }
 }

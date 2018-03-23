@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lupi.UnitTest
+namespace Lupi.Data.Entites
 {
     public class Breed
     {
