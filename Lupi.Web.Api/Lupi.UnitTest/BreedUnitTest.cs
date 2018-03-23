@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Lupi.Data.Entities;
+using Lupi.BusinessLogic
 
 namespace Lupi.UnitTest
 {
@@ -11,6 +12,7 @@ namespace Lupi.UnitTest
         [TestMethod]
         public void CreateBreed()
         {
+            BreedBusinessLogic breeds = new BreedBusinessLogic();
             Guid id = System.Guid.NewGuid();
             String name = "Bulldog";
             String hairType = "";
@@ -19,7 +21,9 @@ namespace Lupi.UnitTest
 
             Breed breed = new Breed(id,name,hairType,hairColor);
 
-            Assert.AreEqual(breed.id,id);
+            bool ok = breeds.Create(breed);
+
+            Assert.IsTrue(ok);
         }
 
         [TestMethod]
