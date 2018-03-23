@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Lupi.Data.Entities;
-using Lupi.BusinessLogic
+using Lupi.BusinessLogic;
 
 namespace Lupi.UnitTest
 {

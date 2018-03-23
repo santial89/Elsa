@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lupi.Web.Api", "Lupi.Web.Api\Lupi.Web.Api.csproj", "{5352ED82-2BC0-4EF5-9E59-D588212D9FC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lupi.Web.Api.Models", "Lupi.Web.Api.Models\Lupi.Web.Api.Models.csproj", "{BBD60B16-6968-4D6A-9A43-3FC3431829BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lupi.BusinessLogic", "Lupi.Web.Api.Models\Lupi.BusinessLogic.csproj", "{BBD60B16-6968-4D6A-9A43-3FC3431829BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lupi.Data.Entities", "Lupi.Data.Entities\Lupi.Data.Entities.csproj", "{BA4B47A3-6E44-4173-AE78-42ADB95658D3}"
 EndProject

@@ -62,6 +62,10 @@
       <Project>{ba4b47a3-6e44-4173-ae78-42adb95658d3}</Project>
       <Name>Lupi.Data.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lupi.Web.Api.Models\Lupi.BusinessLogic.csproj">
+      <Project>{bbd60b16-6968-4d6a-9a43-3fc3431829ba}</Project>
+      <Name>Lupi.BusinessLogic</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lupi.Data.Entities\Lupi.Data.Entities.csproj">
