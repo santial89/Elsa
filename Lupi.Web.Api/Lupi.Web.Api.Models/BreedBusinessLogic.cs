@@ -9,9 +9,23 @@ namespace Lupi.BusinessLogic
 {
     public class BreedBusinessLogic
     {
-        public bool Create(Breed breed)
+        private List<Breed> breeds { get; set; }
+        
+        public BreedBusinessLogic()
         {
-            throw new NotImplementedException();
+            breeds = new List<Breed>();
         }
+         
+        public void Create(Breed breed)
+        {
+            breeds.Add(breed);
+            
+        }
+
+        public bool Exists(Guid id)
+        {
+            return breeds.Exists(b => b.id == id);
+        }
+
     }
 }

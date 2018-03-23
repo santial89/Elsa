@@ -21,9 +21,9 @@ namespace Lupi.UnitTest
 
             Breed breed = new Breed(id,name,hairType,hairColor);
 
-            bool ok = breeds.Create(breed);
+            breeds.Create(breed);
 
-            Assert.IsTrue(ok);
+            Assert.IsTrue(breeds.Exists(breed.id));
         }
 
         [TestMethod]
