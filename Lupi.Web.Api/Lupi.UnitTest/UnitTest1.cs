@@ -39,5 +39,16 @@ namespace Lupi.UnitTest
             //Assert
             Assert.AreEqual(aPet.Name, unNombre);
         }
+        [TestMethod]
+        public void PetPropertiesAgeOK()
+        {
+            //Arrange
+            int unaEdad = 2;
+            Pet aPet = new Pet();
+            //Act
+            aPet.Age = unaEdad;
+            //Assert
+            Assert.AreEqual(aPet.Age, unaEdad);
+        }
     }
 }
