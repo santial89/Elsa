@@ -89,11 +89,27 @@ namespace Lupi.UnitTest
             //Arrange
             Pet aPet = new Pet();
             Base64Image unaImagen = new Base64Image();
+            Guid unGuid = new Guid();
+            unaImagen.Id = unGuid;
             unaImagen.Base64EncodedImage = "UNAIMAGEN";
             //Act
             aPet.Image = unaImagen;
             //Assert
-            Assert.AreEqual(aPet.Image, unaImagen);
+            Assert.AreEqual(aPet.Image.Id, unGuid);
+        }
+        [TestMethod]
+        public void PetPropertiesBreedOK()
+        {
+            //Arrange
+            Pet aPet = new Pet();
+            Breed unaBreed = new Breed();
+            Guid unGuid = new Guid();
+            unaBreed.id = unGuid;
+            
+            //Act
+            aPet.Breed = unaBreed;
+            //Assert
+            Assert.AreEqual(aPet.Breed.id, unGuid);
         }
     }
 }
