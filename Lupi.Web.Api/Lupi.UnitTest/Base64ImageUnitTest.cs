@@ -39,6 +39,21 @@ namespace Lupi.UnitTest
             //Assert
             Assert.AreEqual(unGuid, imagen.Id);
         }
-      
+   
+       [TestMethod]
+       public void SetGetBase64EncodedImageTestOK()
+        {
+            //Arrange
+            Guid unGuid = new Guid();
+            String imagenCodificada = "IMAGENCODIFICADA";
+            Base64Image imagen = new Base64Image();
+            imagen.Id = unGuid;
+            //Act
+            imagen.Base64EncodedImage = imagenCodificada;
+            //Assert
+            Assert.AreEqual(imagenCodificada, imagen.Base64EncodedImage);
+
+        }
+
     }
 }
