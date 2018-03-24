@@ -23,7 +23,7 @@ namespace Lupi.UnitTest
             Assert.IsFalse(tmpIsNull);
         }
         [TestMethod]
-        public void CollarTieneGUID_OK ()
+        public void CollarTieneGuidOK ()
         {
             //Arrange
              Collar tmpCollar = new Collar();
