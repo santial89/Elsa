@@ -18,19 +18,25 @@ namespace Lupi.UnitTest
             // TODO: Agregar aquí la lógica del constructor
             //
         }
-
-       
-       
-
         [TestMethod]
-        public void CrearCrearInstancia()
+        public void CrearInstancia()
         {
             //Arrange
-            Base64Image imagen; 
+            Base64Image imagen;
             //Act
-            imagen= new Base64Image();
+            imagen = new Base64Image();
             //Assert
             Assert.IsNotNull(imagen);
+        }
+        public void SetGetIdUnitTestOK()
+        {
+            //Arrange
+            Guid unGuid = new Guid();
+            Base64Image imagen = new Base64Image();
+            //Act
+            imagen.Id = unGuid;
+            //Assert
+            Assert.AreEqual(unGuid, imagen.Id);
         }
     }
 }
