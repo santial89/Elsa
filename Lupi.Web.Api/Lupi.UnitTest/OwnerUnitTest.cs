@@ -19,7 +19,7 @@ namespace Lupi.UnitTest
             owner.Password = "pfffff";
             owner.BirthDate = DateTime.Now;
             owner.Collars = new List<Collar>();
-
+      
             Assert.AreEqual(owner.Id,id);
             
         }
