@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Lupi.Data.Entities;
+using System.Collections.Generic;
 
 namespace Lupi.UnitTest
 {
@@ -17,6 +18,7 @@ namespace Lupi.UnitTest
             owner.Mail = "juan@mail.com";
             owner.Password = "pfffff";
             owner.BirthDate = DateTime.Now;
+            owner.Collars = new List<Collar>();
 
             Assert.AreEqual(owner.Id,id);
             
@@ -32,7 +34,7 @@ namespace Lupi.UnitTest
             owner.Mail = "juan@mail.com";
             owner.Password = "pfffff";
             owner.BirthDate = DateTime.Now;
-
+            owner.Collars = new List<Collar>();
             var mail = "juan@gmail.com";
             owner.Mail = mail;
 
