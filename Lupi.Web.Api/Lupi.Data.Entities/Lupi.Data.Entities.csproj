@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base64Image.cs" />
     <Compile Include="Breed.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="Collar.cs" />
