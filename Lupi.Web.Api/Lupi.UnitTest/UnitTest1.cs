@@ -111,5 +111,24 @@ namespace Lupi.UnitTest
             //Assert
             Assert.AreEqual(aPet.Breed.id, unGuid);
         }
+
+        // Todo importante, no verifica la validez semántica, es decir
+        //que se le inserte un collar que pertenezca al dueño de esta mascota
+
+
+        [TestMethod]
+        public void PetPropertiesCollarOK()
+        {
+            //Arrange
+            Pet aPet = new Pet();
+            Collar unCollar = new Collar();
+            Guid unGuid = new Guid();
+            unCollar.Id = unGuid;
+
+            //Act
+            aPet.AssignedCollar = unCollar;
+            //Assert
+            Assert.AreEqual(aPet.AssignedCollar.Id, unCollar.Id);
+        }
     }
 }
