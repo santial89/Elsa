@@ -17,5 +17,8 @@ namespace Lupi.Data.Entities
             this.hairType = hairType;
             this.hairColor = hairColor;
         }
+        public Breed()
+        {
+        }
     }
 }

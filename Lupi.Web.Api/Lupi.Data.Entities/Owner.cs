@@ -13,6 +13,6 @@ namespace Lupi.Data.Entities
         public String Mail { get; set; }
         public String Password { get; set; }
         public DateTime BirthDate { get; set; }
-
+        public ICollection<Collar> Collars { get; set; }
     }
 }
