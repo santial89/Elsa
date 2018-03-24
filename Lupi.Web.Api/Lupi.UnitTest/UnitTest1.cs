@@ -83,5 +83,17 @@ namespace Lupi.UnitTest
             //Assert
             Assert.AreEqual(aPet.Weight, unPeso);
         }
+        [TestMethod]
+        public void PetPropertiesImageOK()
+        {
+            //Arrange
+            Pet aPet = new Pet();
+            Base64Image unaImagen = new Base64Image();
+            unaImagen.Base64EncodedImage = "UNAIMAGEN";
+            //Act
+            aPet.Image = unaImagen;
+            //Assert
+            Assert.AreEqual(aPet.Image, unaImagen);
+        }
     }
 }
