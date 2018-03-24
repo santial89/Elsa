@@ -66,11 +66,22 @@ namespace Lupi.UnitTest
         {
             //Arrange
             Pet aPet = new Pet();
-            DateTime unaFecha=DateTime.Now; ;
+            DateTime unaFecha=DateTime.Now; 
             //Act
             aPet.BirthDay = unaFecha;
             //Assert
             Assert.AreEqual(aPet.BirthDay, unaFecha);
+        }
+        [TestMethod]
+        public void PetPropertiesWeightOK()
+        {
+            //Arrange
+            Pet aPet = new Pet();
+            Double unPeso = 14.4;
+            //Act
+            aPet.Weight = unPeso;
+            //Assert
+            Assert.AreEqual(aPet.Weight, unPeso);
         }
     }
 }
