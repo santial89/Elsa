@@ -8,5 +8,6 @@ namespace Lupi.Data.Entities
 {
     public class Base64Image
     {
+        public Guid Id { set; get; }
     }
 }
