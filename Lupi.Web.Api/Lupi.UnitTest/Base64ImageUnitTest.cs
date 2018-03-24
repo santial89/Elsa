@@ -28,6 +28,7 @@ namespace Lupi.UnitTest
             //Assert
             Assert.IsNotNull(imagen);
         }
+        [TestMethod]
         public void SetGetIdUnitTestOK()
         {
             //Arrange
@@ -38,5 +39,6 @@ namespace Lupi.UnitTest
             //Assert
             Assert.AreEqual(unGuid, imagen.Id);
         }
+      
     }
 }
