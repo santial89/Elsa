@@ -61,6 +61,16 @@ namespace Lupi.UnitTest
             //Assert
             Assert.AreEqual(aPet.Size, unTamanio);
         }
-
+        [TestMethod]
+        public void PetPropertiesBrithDayOK()
+        {
+            //Arrange
+            Pet aPet = new Pet();
+            DateTime unaFecha=DateTime.Now; ;
+            //Act
+            aPet.BirthDay = unaFecha;
+            //Assert
+            Assert.AreEqual(aPet.BirthDay, unaFecha);
+        }
     }
 }

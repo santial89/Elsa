@@ -9,6 +9,7 @@ namespace Lupi.Data.Entities
     public class Pet
     {
         public int Age { get; set; }
+        public DateTime BirthDay { get; set; }
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Size { get; set; }
