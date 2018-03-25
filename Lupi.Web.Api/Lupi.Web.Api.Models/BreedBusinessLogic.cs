@@ -27,5 +27,13 @@ namespace Lupi.BusinessLogic
             return breeds.Exists(b => b.id == id);
         }
 
+        public void Update(Guid id, Breed updateBreed)
+        {
+            var breed = breeds.Find(b => b.id == id);
+//            breed.hairColor = updateBreed.hairColor;
+            breed.hairType = updateBreed.hairType;
+            breed.name = updateBreed.name;
+
+        }
     }
 }

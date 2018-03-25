@@ -29,9 +29,13 @@ namespace Lupi.UnitTest
         [TestMethod]
         public void UpdateBreed()
         {
-            var breed = CreateABreed();
+            BreedBusinessLogic breeds = new BreedBusinessLogic();
+            var breed = CreateABreed();            
             var breedOldName = breed.name;
             breed.name = "Ovejero";
+
+            breeds.Update(breed.id, breed);
+
             Assert.AreNotEqual(breedOldName,breed.name);
         }
 
