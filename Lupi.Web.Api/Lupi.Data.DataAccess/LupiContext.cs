@@ -8,7 +8,7 @@ namespace Lupi.Data.DataAccess
 {
     public class LupiContext : DbContext
     {
-        public LupiContext():base("name=LupiDBConnectionString")
+        public LupiContext():base("name=LupiDB")
         {
             /*
             drops an existing database and creates a new database, if your model classes 
